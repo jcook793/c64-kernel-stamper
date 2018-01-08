@@ -1,0 +1,90 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+
+  <title>Commodore 64 Boot Screen Editor</title>
+  <meta name="description" content="Edit the text and color of Commodore 64 kernel ROMs">
+  <meta name="author" content="John Cook">
+
+  <link rel="stylesheet" href="css/kernel-stamper.css">
+</head>
+
+<body>
+	<script src="js/kernel-stamper.js"></script>
+
+	<div>
+		<input type="file" onchange="readRomFiles(event)" >
+	</div>
+
+	<div id="rom-container">
+		<h2 id="rom-title"></h2>
+		<div id="c64-screen">
+			<textarea id="c64-screen-text" cols="40" rows="25">
+
+  **** COMMODORE 64 KERNEL STAMPER ****
+
+ UPLOAD KERNEL ROM FILE ↑ TO GET STARTED
+
+READY.
+█
+</textarea>
+		</div>
+	</div>
+
+	<div id="edit-box">
+		<label for="rom-line-1">Line 1:</label> <input type="text" id="rom-line-1" size="36">
+		<br>
+		<label for="rom-line-2">Line 2:</label> <input type="text" id="rom-line-2" size="17">
+
+		<br>
+		<br>
+
+		Border color:
+		<table>
+			<tr>
+				<td id="color-black">&nbsp;</td>
+				<td id="color-gray-1">&nbsp;</td>
+				<td id="color-gray-2">&nbsp;</td>
+				<td id="color-gray-3">&nbsp;</td>
+				<td id="color-white">&nbsp;</td>
+				<td id="color-cyan">&nbsp;</td>
+				<td id="color-light-blue">&nbsp;</td>
+				<td id="color-blue">&nbsp;</td>
+				<td id="color-purple">&nbsp;</td>
+				<td id="color-red">&nbsp;</td>
+				<td id="color-brown">&nbsp;</td>
+				<td id="color-orange">&nbsp;</td>
+				<td id="color-light-red">&nbsp;</td>
+				<td id="color-green">&nbsp;</td>
+				<td id="color-light-green">&nbsp;</td>
+				<td id="color-yellow">&nbsp;</td>
+			</tr>
+		</table>
+
+		<br>
+		Main background color:
+		<table>
+			<tr>
+				<td id="color-black">&nbsp;</td>
+				<td id="color-gray-1">&nbsp;</td>
+				<td id="color-gray-2">&nbsp;</td>
+				<td id="color-gray-3">&nbsp;</td>
+				<td id="color-white">&nbsp;</td>
+				<td id="color-cyan">&nbsp;</td>
+				<td id="color-light-blue">&nbsp;</td>
+				<td id="color-blue">&nbsp;</td>
+				<td id="color-purple">&nbsp;</td>
+				<td id="color-red">&nbsp;</td>
+				<td id="color-brown">&nbsp;</td>
+				<td id="color-orange">&nbsp;</td>
+				<td id="color-light-red">&nbsp;</td>
+				<td id="color-green">&nbsp;</td>
+				<td id="color-light-green">&nbsp;</td>
+				<td id="color-yellow">&nbsp;</td>
+			</tr>
+		</table>
+	</div>
+</body>
+</html>

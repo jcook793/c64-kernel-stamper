@@ -1,0 +1,45 @@
+@font-face {
+	 font-family: "C64 Pro Mono Local";
+	 src: url("fonts/C64_Pro_Mono-STYLE.woff") format("woff");
+}
+
+div#c64-screen {
+}
+
+textarea {
+	font: normal 14px "C64 Pro Mono Local", verdana, helvetica, sans-serif;
+	resize: none;
+	border: 40px solid;
+
+	/* These are the most interesting bits */
+	border-color: #0088FF; /* C64 border color */
+	background-color: #0000AA; /* C64 main screen */
+	color: #0088FF; /* C64 text color */
+}
+
+input[type="text"] {
+	font: normal 14px "C64 Pro Mono Local", verdana, helvetica, sans-serif;
+	padding: 10px;
+	background-color: #0000AA; /* C64 main screen */
+	color: #0088FF; /* C64 text color */	
+}
+
+
+
+td { width: 50px; height: 50px;}
+td#color-black { background-color: #000000; }
+td#color-gray-1 { background-color: #333333; }
+td#color-gray-2 { background-color: #777777; }
+td#color-gray-3 { background-color: #BBBBBB; }
+td#color-white { background-color: #FFFFFF; }
+td#color-red { background-color: #880000; }
+td#color-cyan { background-color: #AAFFEE; }
+td#color-purple { background-color: #CC44CC; }
+td#color-green { background-color: #00CC55; }
+td#color-blue { background-color: #0000AA; }
+td#color-yellow { background-color: #EEEE77; }
+td#color-orange { background-color: #DD8855; }
+td#color-brown { background-color: #664400; }
+td#color-light-red { background-color: #FF7777; }
+td#color-light-green { background-color: #AAFF66; }
+td#color-light-blue { background-color: #0088FF; }
